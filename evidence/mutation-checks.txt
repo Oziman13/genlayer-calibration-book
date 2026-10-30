@@ -1,0 +1,5 @@
+Calibration Book v0.1.0 -- mutation check, run on 2026-10-30 (UTC)
+python3 scripts/mutation_check.py
+
+base: tests pass on the unmodified contract
+mutants: 53, killed: 53, survived: 0
