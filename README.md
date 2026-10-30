@@ -12,7 +12,7 @@ anyone from the stored questions.
 * `scripts/mutation_check.py`: breaks the contract on purpose in 53 ways and checks that the tests notice (53 of 53 do).
 * `evidence/`: the outputs of those runs.
 
-Status: **v0.1.0, tested in memory and on a local network; not deployed to any public network yet.** See [Live run](#live-run) and [What the record does not show](#what-the-record-does-not-show).
+Status: **v0.1.0, deployed on Studionet at `0xCa8DE169a8Ae6ba842c3Cc3Ed65B0C7E62E90764`; tested in memory and on a local network.** See [Live run](#live-run) and [What the record does not show](#what-the-record-does-not-show).
 
 ## Why a contract for this
 
@@ -91,9 +91,11 @@ Not covered: real validators (the tests run in memory or on a local simulator), 
 
 ## Live run
 
-None yet. The contract has not been deployed to Studionet or any other public network, so there is no address and there are no
-transaction hashes. What exists: 118 in-memory tests, 3 tests on a local 5-validator simulator, and the mutation check (outputs in
-`evidence/`). Nothing here shows how the contract behaves on a public network, with real wallets, or under real validator timing.
+Deployed on Studionet (GenLayer Studio) on 2026-10-30 at `0xCa8DE169a8Ae6ba842c3Cc3Ed65B0C7E62E90764`; the deploy transaction
+reached `FINALIZED`. That is the only thing done on the public network: no `ask`, `forecast` or `resolve` call has been made
+there yet, so nothing here shows how the contract behaves under real wallets or validator timing. What backs the logic is the
+in-memory and local-network testing: 118 in-memory tests, 3 tests on a local 5-validator simulator, and the mutation check
+(outputs in `evidence/`).
 
 ## Try it
 
