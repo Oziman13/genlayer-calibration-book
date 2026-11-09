@@ -1,0 +1,5 @@
+Demo test network, validator count report
+
+This page is a stable source for the live test of the Calibration Book. It is written by the contract's author.
+
+The validator count of the demo test network has not been published yet. Nothing is stated here about how many validators the network has.
