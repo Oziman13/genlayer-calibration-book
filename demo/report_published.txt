@@ -1,0 +1,5 @@
+Demo test network, validator count report
+
+This page is a stable source for the live test of the Calibration Book. It is written by the contract's author.
+
+On 1 November 2026 the demo test network reached 143 validators. The network had more than 100 validators on that date and has kept them since.
