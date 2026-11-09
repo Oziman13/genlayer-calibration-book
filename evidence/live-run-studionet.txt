@@ -1,0 +1,13 @@
+Calibration Book v0.2.0, Studionet, contract 0xF05D9B69e71Be13556A7651822e921e2E7d37b25, 2026-11-09 (read back from Studio)
+
+settle_from_source(0)  tx 0x510be2da22ecede37be91e8904a4f1f95797e0c43146287476883383223b5606  FINALIZED
+get_question_json(0):
+{"asker":"0xde48a3e53d80c316a6a72575b9f7ad5141df76b9","closes":1794222600,"evidence":{"quote":"On 1 November 2026 the demo test network reached 143 validators. The network had more than 100 validators on that date and has kept them since.","source":"https://raw.githubusercontent.com/Oziman13/genlayer-calibration-book/main/demo/report_published.txt"},"forecast_count":1,"forecasts":{"0xde48a3e53d80c316a6a72575b9f7ad5141df76b9":800},"grace":60,"id":0,"opened":1794221349,"outcome":1,"resolver":"0x0000000000000000000000000000000000000001","settled":1794222755,"settled_by":"SOURCE","source":"https://raw.githubusercontent.com/Oziman13/genlayer-calibration-book/main/demo/report_published.txt","state":"RESOLVED","text":"Did the demo test network have more than 100 validators by 8 November 2026?"}
+
+settle_from_source(1)  tx 0x9fc06f3a6b3a9b7c9ff679c3e04e325a431858e605b37290713b12f85b9ceafb  FINALIZED, output {"verdict": "UNDECIDED"}
+Equivalence principle output: {"quote":"","state":"OK","verdict":"UNDECIDED"}
+Validators that agreed (model): claude-sonnet-4.6, gemma, grok, gpt-5.4, sonnet, glm, gemini (7). Five others were cancelled after quorum.
+get_question_json(1): state OPEN, outcome null, settled null, settled_by null, evidence null, forecast_count 1.
+
+get_record_json(0xde48a3e53d80c316a6a72575b9f7ad5141df76b9):
+{"address":"0xde48a3e53d80c316a6a72575b9f7ad5141df76b9","buckets":[...only 601-800 has one forecast: avg 800, observed_yes 1000...],"distinct_resolvers":1,"forecasts":[{"brier":40,"outcome":1,"p":800,"question":0,"resolver":"source:https://raw.githubusercontent.com/Oziman13/genlayer-calibration-book/main/demo/report_published.txt","settled_by":"SOURCE"}],"mean_brier":40,"pending":1,"resolved":1,"settled_from_source":1,"skill_permille":840,"void":0}

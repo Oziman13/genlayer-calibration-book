@@ -1,7 +1,2 @@
-Calibration Book v0.1.0 -- local network (glsim, 5 validators), run on 2026-10-30 (UTC)
-python3 -m pytest tests/glsim -v   (model mocked identically on every validator)
-
-tests/glsim/test_calibration_book_network.py::test_a_question_is_asked_forecast_settled_and_scored PASSED
-tests/glsim/test_calibration_book_network.py::test_the_rules_hold_on_the_network PASSED
-tests/glsim/test_calibration_book_network.py::test_a_voided_question_leaves_the_record PASSED
-============================== 3 passed in 3.92s ===============================
+.......                                                                  [100%]
+7 passed in 9.78s

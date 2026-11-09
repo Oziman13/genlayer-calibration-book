@@ -1,5 +1,14 @@
-Calibration Book v0.1.0 -- mutation check, run on 2026-10-30 (UTC)
-python3 scripts/mutation_check.py
+Mutation check, Calibration Book v0.2.0 (python3 scripts/mutation_check.py)
+Each line of the script changes the contract in one small way on a disposable copy; the direct tests must fail.
 
-base: tests pass on the unmodified contract
-mutants: 53, killed: 53, survived: 0
+First full run: base: tests pass on the unmodified contract
+mutants: 107, killed: 104, survived: 3
+ - validator ignores non-return          -> added test: a validator rejects a leader that failed
+ - reading undecided with quote          -> added test: a validator rejects an undecided result that carries a quotation
+ - reading quote length unchecked        -> equivalent: _on_page repeats the 12..300 length check, so no result can change
+
+After the two new tests both of those mutants were re-run alone and are caught.
+Before that run, two other mutants were written and dropped because they cannot change any result:
+ - "quote type unchecked": a non-text quotation already fails later (UNDECIDED needs "", YES/NO raises inside the guarded block)
+ - "model size unchecked": with response_format json the model answer arrives parsed, so the size check on text is only a guard
+Totals: 109 mutants written, 106 caught, 3 documented as unable to change a result.
